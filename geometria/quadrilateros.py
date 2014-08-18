@@ -1,5 +1,6 @@
 from geometria.poligono import Poligono, NaoPoligono
 
+
 class NaoQuadrilatero(NaoPoligono):
     pass
 

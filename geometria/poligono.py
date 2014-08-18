@@ -6,7 +6,7 @@ class Poligono(object):
     "Classe que representa um polígono genérico"
 
     def __init__(self, *lados):
-        if len(lados) < 2:
+        if len(lados) <= 2:
             raise NaoPoligono
 
         for i in lados:
