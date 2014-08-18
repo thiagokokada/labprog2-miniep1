@@ -22,6 +22,19 @@ class Triangulo(Poligono):
         return (self.base * self.altura) / 2
 
 
+class Isosceles(Triangulo):
+
+    def __init__(self, base, lado):
+        self.base = base
+        super().__init__(base, lado, lado)
+
+    @property
+    def altura(self):
+        return math.sqrt(math.pow(self.lados[1], 2) - math.pow(self.base, 2) / 4)
+
+    def area(self):
+        return self._area()
+
 class Equilatero(Triangulo):
     "Classe que representa um triangulo equilátero"
 
