@@ -44,7 +44,7 @@ class Equilatero(Triangulo):
 
     @property
     def altura(self):
-        return (self.base * math.sqrt(3)) / 2       
+        return (self.base * math.sqrt(3)) / 2
 
     def area(self):
         return self._area()
