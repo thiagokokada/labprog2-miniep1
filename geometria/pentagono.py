@@ -19,4 +19,6 @@ class Regular(Pentagono):
     def __init__(self, tamanho):
         super().__init__(5)
         self.tamanho = tamanho
-        
+
+    def perimetro(self):
+        return self.lados * self.tamanho
