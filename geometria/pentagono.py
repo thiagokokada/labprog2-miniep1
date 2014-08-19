@@ -13,3 +13,15 @@ class Pentagono(Poligono):
             raise NaoTriangulo
 
         super().__init__(*lados)
+
+class Regular(Pentagono):
+    """Implementação de um pentágono regular"""
+
+    def __init__(self, arg):
+        super(Regular, self).__init__(5) # outra forma equivalente a super()
+        self.aresta = aresta
+
+    def perimetro(self):
+        per = self.aresta *self.lados
+
+        return per
