@@ -13,3 +13,10 @@ class Pentagono(Poligono):
             raise NaoTriangulo
 
         super().__init__(*lados)
+
+class Regular(Pentagono):
+    """Pentagono regular: cinco lados iguais e 540 graus de soma dos angulos internos"""
+    def __init__(self, tamanho):
+        super().__init__(5)
+        self.tamanho = tamanho
+        
